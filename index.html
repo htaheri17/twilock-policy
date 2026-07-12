@@ -27,7 +27,7 @@
 <body>
 <div class="wrap">
   <h1>Twilock Privacy Policy</h1>
-  <p class="meta">Last updated: July 5, 2026</p>
+  <p class="meta">Last updated: July 12, 2026</p>
 
   <p>Twilock ("we," "us," or "the app") helps you stop doomscrolling during your chosen night and morning windows. We built Twilock to protect your attention — and we take the same care with your privacy. This policy explains what data the app handles, why, and the choices you have.</p>
 
@@ -41,10 +41,10 @@
   </ul>
 
   <h2>Data stored to power accounts &amp; the social features</h2>
-  <p>These features are optional — you only create an account if you open the Friends tab. If you do, we store the minimum needed, via our backend provider, Supabase:</p>
+  <p>These features are optional. Onboarding offers sign-in, but includes a "Skip for now" option — creating an account is only actually required if you want to use the Friends tab. If you do sign in, we store the minimum needed, via our backend provider, Supabase:</p>
   <ul>
-    <li><strong>Account.</strong> You sign in with Sign in with Apple. This gives us your email address (or a private relay address, if you choose to hide your email from us) and a unique account identifier, which our authentication provider, Supabase, stores to keep you signed in. If Apple shares your name on first sign-in, we store an editable display name too. We never see your Apple ID password.</li>
-    <li><strong>Profile &amp; progress.</strong> To show you on your friends' leaderboard, we store your display name, invite code, current streak, and longest streak. We do <strong>not</strong> store which apps you shield, your usage data, your check-ins, or your earned badges on our servers — those stay on your device only.</li>
+    <li><strong>Account.</strong> You can sign in with Sign in with Apple, Sign in with Google, or email/password. Depending on the method, this gives us your email address (or, with Apple, a private relay address if you choose to hide your email from us) and a unique account identifier, which our authentication provider, Supabase, stores to keep you signed in. If Apple or Google shares your name on first sign-in, we store an editable display name too. We never see your Apple ID password, your Google password, or (for email sign-in) your password in plain text — Supabase stores only a salted hash of it.</li>
+    <li><strong>Profile &amp; progress.</strong> To show you on your friends' leaderboard, we store your display name, invite code, current streak, and longest streak. We also sync a day-by-day record of your no-scroll windows — the date, which window (night or morning), the outcome (clean, frozen, or violated), and your device's time zone — so your streak and history stay consistent across devices. We do <strong>not</strong> store which apps you shield, your raw app-usage data, your check-ins, or your earned badges on our servers — those stay on your device only.</li>
     <li><strong>Friends.</strong> Friend connections and pending friend requests you create (via invite codes) are stored so the social and leaderboard features work.</li>
   </ul>
 
@@ -61,7 +61,8 @@
   <h2>Third-party services</h2>
   <ul>
     <li><strong>Apple</strong> — Sign in with Apple, Screen Time / Family Controls, and in-app purchases. See Apple's Privacy Policy.</li>
-    <li><strong>Supabase</strong> — stores your account, profile, progress, and friend connections for the social features.</li>
+    <li><strong>Google</strong> — Sign in with Google, if you choose that option. Google receives your request to authenticate and returns an identity token confirming who you are; see Google's Privacy Policy.</li>
+    <li><strong>Supabase</strong> — stores your account, profile, progress (including your day-by-day no-scroll history), and friend connections for the social features.</li>
     <li><strong>RevenueCat</strong> — manages your subscription status.</li>
   </ul>
 
